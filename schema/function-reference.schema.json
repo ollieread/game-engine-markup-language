@@ -1,6 +1,6 @@
 {
   "$schema"    : "https://json-schema.org/draft/2020-12/schema",
-  "$id"        : "https://example.com/schemas/function-reference.schema.json",
+  "$id"        : "https://geml.ollieread.com/schemas/function-reference.schema.json",
   "title"      : "Function Reference",
   "description": "Reference to a user defined function",
   "type"       : "object",

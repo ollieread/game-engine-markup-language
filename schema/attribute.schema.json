@@ -1,6 +1,6 @@
 {
   "$schema"    : "https://json-schema.org/draft/2020-12/schema",
-  "$id"        : "https://example.com/schemas/attribute.schema.json",
+  "$id"        : "https://geml.ollieread.com/schemas/attribute.schema.json",
   "title"      : "Attribute",
   "description": "Defines an attribute that an entity can possess",
   "type"       : "object",

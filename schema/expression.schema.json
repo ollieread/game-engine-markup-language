@@ -1,6 +1,6 @@
 {
   "$schema"    : "https://json-schema.org/draft/2020-12/schema",
-  "$id"        : "https://example.com/schemas/expression.schema.json",
+  "$id"        : "https://geml.ollieread.com/schemas/expression.schema.json",
   "title"      : "Expression Tree with Specific Operators",
   "description": "Allows for a tree structure of mathematical expressions with specific operators.",
   "type"       : "object",
@@ -13,6 +13,9 @@
     },
     {
       "$ref": "/schema/expressions/value.schema.json"
+    },
+    {
+      "$ref": "/schema/function-reference.schema.json"
     }
   ]
 }

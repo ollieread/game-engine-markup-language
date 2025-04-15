@@ -1,6 +1,6 @@
 {
   "$schema"    : "https://json-schema.org/draft/2020-12/schema",
-  "$id"        : "https://example.com/schemas/system.schema.json",
+  "$id"        : "https://geml.ollieread.com/schemas/system.schema.json",
   "title"      : "Game System",
   "description": "Defines a game system",
   "type"       : "object",
