@@ -1,0 +1,13 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/boolean/eq.schema.json",
+  "title"               : "Expression Tree Equals Operator",
+  "description"         : "The expression component for the 'eq' operator.",
+  "type"                : "array",
+  "items"               : {
+    "$ref": "/schema/expressions/argument.schema.json"
+  },
+  "minItems"            : 2,
+  "maxItems"            : 2,
+  "additionalProperties": false
+}

@@ -1,0 +1,13 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/numeric/floor.schema.json",
+  "title"               : "Expression Tree Floor Operator",
+  "description"         : "The expression component for the 'floor' operator.",
+  "type"                : "array",
+  "items"               : {
+    "$ref": "/schema/expressions/argument.schema.json"
+  },
+  "minItems"            : 1,
+  "maxItems"            : 1,
+  "additionalProperties": false
+}

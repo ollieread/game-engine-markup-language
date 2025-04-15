@@ -1,0 +1,15 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://d20ml.ollieread.com/schema/expressions/argument.schema.json",
+  "title"      : "Expression Tree Argument Component",
+  "description": "Contains the schema definitions for providing arguments as part of an expression.",
+  "type"       : "object",
+  "oneOf"      : [
+    {
+      "$ref": "/schema/expressions/numeric.schema.json"
+    },
+    {
+      "$ref": "/schema/expressions/value.schema.json"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/value/const.schema.json",
+  "title"               : "Expression Tree Const Value",
+  "description"         : "The expression component for the 'const' value.",
+  "type"                : "number",
+  "minItems"            : 2,
+  "additionalProperties": false
+}

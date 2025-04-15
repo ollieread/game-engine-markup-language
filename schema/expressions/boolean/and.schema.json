@@ -1,0 +1,12 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/logical/and.schema.json",
+  "title"               : "Expression Tree And Operator",
+  "description"         : "The expression component for the 'and' operator.",
+  "type"                : "array",
+  "items"               : {
+    "$ref": "/schema/expressions/boolean.schema.json"
+  },
+  "minItems"            : 2,
+  "additionalProperties": false
+}

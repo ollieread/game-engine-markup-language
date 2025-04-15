@@ -1,0 +1,18 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://example.com/schemas/expression.schema.json",
+  "title"      : "Expression Tree with Specific Operators",
+  "description": "Allows for a tree structure of mathematical expressions with specific operators.",
+  "type"       : "object",
+  "oneOf"      : [
+    {
+      "$ref": "/schema/expressions/condition.schema.json"
+    },
+    {
+      "$ref": "/schema/expressions/numeric.schema.json"
+    },
+    {
+      "$ref": "/schema/expressions/value.schema.json"
+    }
+  ]
+}

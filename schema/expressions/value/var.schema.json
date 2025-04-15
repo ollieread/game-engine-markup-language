@@ -1,0 +1,9 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/value/var.schema.json",
+  "title"               : "Expression Tree Variable Value",
+  "description"         : "The expression component for the 'var' value.",
+  "type"                : "string",
+  "minItems"            : 2,
+  "additionalProperties": false
+}

@@ -1,0 +1,27 @@
+{
+  "$schema"  : "/schema/attribute.schema.json",
+  "name"     : "Wisdom",
+  "shortName": "WIS",
+  "baseValue": 10,
+  "modifier" : {
+    "floor": [
+      {
+        "div": [
+          {
+            "sub": [
+              {
+                "var": "entity.attributes.{$shortName}.calculatedValue"
+              },
+              {
+                "const": 10
+              }
+            ]
+          },
+          {
+            "const": 2
+          }
+        ]
+      }
+    ]
+  }
+}

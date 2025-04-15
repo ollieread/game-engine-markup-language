@@ -1,0 +1,97 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://d20ml.ollieread.com/schema/expressions/numeric.schema.json",
+  "title"      : "Expression Tree Numeric Operator Component",
+  "description": "Contains the schema definitions for numerical operators as part of an expression.",
+  "type"       : "object",
+  "oneOf"      : [
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/add.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/ceil.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/div.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/floor.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/max.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/min.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/mod.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/mul.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/pow.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/sqrt.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/numeric/sub.schema.json"
+        }
+      }
+    }
+  ]
+}

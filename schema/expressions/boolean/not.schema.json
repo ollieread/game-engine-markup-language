@@ -1,0 +1,13 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/boolean/not.schema.json",
+  "title"               : "Expression Tree Not Operator",
+  "description"         : "The expression component for the 'not' operator.",
+  "type"                : "array",
+  "items"               : {
+    "$ref": "/schema/expressions/boolean.schema.json"
+  },
+  "minItems"            : 1,
+  "maxItems"            : 1,
+  "additionalProperties": false
+}

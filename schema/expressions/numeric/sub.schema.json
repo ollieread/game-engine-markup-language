@@ -1,0 +1,12 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/numeric/sub.schema.json",
+  "title"               : "Expression Tree Subtract Operator",
+  "description"         : "The expression component for the 'sub' operator.",
+  "type"                : "array",
+  "items"               : {
+    "$ref": "/schema/expressions/argument.schema.json"
+  },
+  "minItems"            : 2,
+  "additionalProperties": false
+}

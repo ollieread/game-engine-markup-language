@@ -1,0 +1,15 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://d20ml.ollieread.com/schema/expressions/value.schema.json",
+  "title"      : "Expression Tree Value Component",
+  "description": "Contains the schema definitions for providing values as part of an expression.",
+  "type"       : "object",
+  "oneOf"      : [
+    {
+      "$ref": "/schema/expressions/value/const.schema.json"
+    },
+    {
+      "$ref": "/schema/expressions/value/var.schema.json"
+    }
+  ]
+}

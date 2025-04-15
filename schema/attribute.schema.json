@@ -1,0 +1,26 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://example.com/schemas/attribute.schema.json",
+  "title"      : "Attribute",
+  "description": "Defines an attribute that an entity can possess",
+  "type"       : "object",
+  "properties" : {
+    "name"     : {
+      "type": "string"
+    },
+    "shortName": {
+      "type": "string"
+    },
+    "baseValue": {
+      "type": "integer"
+    },
+    "modifier" : {
+      "$ref": "/schema/expression.schema.json"
+    }
+  },
+  "required"   : [
+    "name",
+    "shortName",
+    "baseValue"
+  ]
+}

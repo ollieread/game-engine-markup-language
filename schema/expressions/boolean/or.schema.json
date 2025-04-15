@@ -1,0 +1,12 @@
+{
+  "$schema"             : "https://json-schema.org/draft/2020-12/schema",
+  "$id"                 : "https://d20ml.ollieread.com/schema/expressions/boolean/or.schema.json",
+  "title"               : "Expression Tree Or Operator",
+  "description"         : "The expression component for the 'or' operator.",
+  "type"                : "array",
+  "items"               : {
+    "$ref": "/schema/expressions/boolean.schema.json"
+  },
+  "minItems"            : 2,
+  "additionalProperties": false
+}

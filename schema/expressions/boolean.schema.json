@@ -1,0 +1,81 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://d20ml.ollieread.com/schema/expressions/boolean.schema.json",
+  "title"      : "Expression Tree Boolean Operator Component",
+  "description": "Contains the schema definitions for boolean operators as part of an expression.",
+  "type"       : "object",
+  "oneOf"      : [
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/and.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/eq.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/gt.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/gt.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/lt.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/lte.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/neq.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/not.schema.json"
+        }
+      }
+    },
+    {
+      "type"      : "object",
+      "properties": {
+        "add": {
+          "$ref": "/schema/expressions/boolean/or.schema.json"
+        }
+      }
+    }
+  ]
+}
