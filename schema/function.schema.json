@@ -1,0 +1,29 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://example.com/schemas/function.schema.json",
+  "title"      : "Functions",
+  "description": "Defines a reusable function",
+  "type"       : "object",
+  "properties" : {
+    "name"      : {
+      "type": "string"
+    },
+    "shortName" : {
+      "type": "string"
+    },
+    "params"    : {
+      "type" : "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expression": {
+      "$ref": "/schema/expression.schema.json"
+    }
+  },
+  "required"   : [
+    "name",
+    "shortName",
+    "expression"
+  ]
+}

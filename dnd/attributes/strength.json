@@ -4,24 +4,7 @@
   "shortName": "STR",
   "baseValue": 10,
   "modifier" : {
-    "floor": [
-      {
-        "div": [
-          {
-            "sub": [
-              {
-                "var": "entity.attributes.{$shortName}.calculatedValue"
-              },
-              {
-                "const": 10
-              }
-            ]
-          },
-          {
-            "const": 2
-          }
-        ]
-      }
-    ]
+    "fn"  : "modifier",
+    "args": [{"var": "entity.attributes.{$shortName}.calculatedValue"}]
   }
 }

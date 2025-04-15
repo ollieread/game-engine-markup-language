@@ -1,0 +1,11 @@
+{
+  "$schema"   : "/schema/function.schema.json",
+  "name"      : "Attribute Modifier Calculator",
+  "shortName" : "modifier",
+  "params"    : [
+    "value"
+  ],
+  "expression": {
+    "floor": [{"div": [{"sub": [{"var": "$params.value"}, {"const": 10}]}, {"const": 2}]}]
+  }
+}

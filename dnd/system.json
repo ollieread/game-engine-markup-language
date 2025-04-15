@@ -1,0 +1,17 @@
+{
+  "$schema"   : "/schema/system.schema.json",
+  "name"      : "Dungeons & Dragons 5th Edition",
+  "slug"      : "dnd-5e",
+  "version"   : "1.0.0",
+  "attributes": [
+    "/attributes/strength.json",
+    "/attributes/dexterity.json",
+    "/attributes/constitution.json",
+    "/attributes/intelligence.json",
+    "/attributes/wisdom.json",
+    "/attributes/charisma.json"
+  ],
+  "functions": [
+    "/functions/modifier.json"
+  ]
+}

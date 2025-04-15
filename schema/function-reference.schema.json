@@ -1,0 +1,23 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://example.com/schemas/function-reference.schema.json",
+  "title"      : "Function Reference",
+  "description": "Reference to a user defined function",
+  "type"       : "object",
+  "properties" : {
+    "fn"  : {
+      "type"       : "string",
+      "description": "The name of the function to call"
+    },
+    "args": {
+      "type" : "array",
+      "items": {
+        "$ref": "/schema/expression.schema.json"
+      }
+    }
+  },
+  "required"   : [
+    "fn",
+    "args"
+  ]
+}

@@ -15,7 +15,14 @@
       "type": "integer"
     },
     "modifier" : {
-      "$ref": "/schema/expression.schema.json"
+      "oneOf": [
+        {
+          "$ref": "/schema/expression.schema.json"
+        },
+        {
+          "$ref": "/schema/function-reference.schema.json"
+        }
+      ]
     }
   },
   "required"   : [

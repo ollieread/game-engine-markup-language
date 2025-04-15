@@ -1,0 +1,55 @@
+{
+  "$schema"    : "https://json-schema.org/draft/2020-12/schema",
+  "$id"        : "https://example.com/schemas/system.schema.json",
+  "title"      : "Game System",
+  "description": "Defines a game system",
+  "type"       : "object",
+  "properties" : {
+    "name"      : {
+      "type": "string"
+    },
+    "slug"      : {
+      "type"   : "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "version"   : {
+      "type"    : "string",
+      "pattern:": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "attributes": {
+      "type" : "array",
+      "items": {
+        "oneOf": [
+          {
+            "type"       : "string",
+            "description": "A path to an attribute file"
+          },
+          {
+            "$ref"       : "/schema/attribute.schema.json",
+            "description": "An attribute object"
+          }
+        ]
+      }
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "type"       : "string",
+            "description": "A path to a function file"
+          },
+          {
+            "$ref"       : "/schema/function.schema.json",
+            "description": "A function object"
+          }
+        ]
+      }
+    }
+  },
+  "required"   : [
+    "name",
+    "slug",
+    "version"
+  ]
+}
